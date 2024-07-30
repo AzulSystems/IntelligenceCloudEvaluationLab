@@ -16,8 +16,8 @@ export JDK_JAVA_OPTIONS="-javaagent:${AGENTDIR}/ic-agent.jar=accessor=${AGENTDIR
    -DaagentDir=${AGENTDIR} \
    -Djava.security.policy=${AGENTDIR}/agent.all.policy"
 
-# set up for class level code inventory, which is the default. IC Agent does not support method-level
-# deets at https://docs.azul.com/intelligence-cloud/detailed-information/diagnostic-configuration#diagnostics-crs-arguments
+# set up for class level code inventory, which is the default. IC Agent does not yet support method-level CI.
+# Details at https://docs.azul.com/intelligence-cloud/detailed-information/diagnostic-configuration#diagnostics-crs-arguments
 
 export AZ_CRS_ARGUMENTS="log=info,UnlockExperimentalCRS,enable,api.url=https://localhost,delayInitiation=0,delayTermination=120000"
 
