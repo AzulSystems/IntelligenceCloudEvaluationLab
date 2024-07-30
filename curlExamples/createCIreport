@@ -1,4 +1,4 @@
-APIKEY=<SET THIS FROM YOUR PROFILE SETTINGS>
+APIKEY=<SET THIS FROM SETTINGS -> PROFILE>
 ENDPOINT=<SET THIS FROM YOUR INSTANCE - CODE INVENTORY -> API -> Show Configuration>
 ## MAKE SURE YOU APPED /report/codeInventory to the end
 ## example: ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/report/codeInventory
