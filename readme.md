@@ -1,4 +1,4 @@
-# Azul Sales Engineering Lab for AIC Onboarding and Azul Vulnerability Detection 
+# Azul Partner Lab for AIC Onboarding and Azul Vulnerability Detection 
 
 ## Goals
 
@@ -6,19 +6,19 @@
 - Make sure you can accomplish the labs using these 3 items:
     1. this README (please follow it end to end and don't skip any steps :))
     2. our Public Docs at https://docs.azul.com/intelligence-cloud/
-    3. the instructions for importing an AVD report into a spreadsheet - they are here: https://azul.atlassian.net/wiki/spaces/~7120201d86c0b3afce49df8eafaa97b2209151/pages/1286570014/Azul+Intelligence+Cloud+SE+Certification+Outline#Demo-and-Pilot-Pre-Work---How-to-Generate-an-Excel-Spreadsheet-from-an-AVD-Generated-JSON-Report 
+    3. the instructions for importing an AVD report into a spreadsheet - they are at the end of this README
 - End up with a running instance in AIC for both AVD and CI. Class-level CI is enabled by default.
 - Ensure that you can see the visualization for your AVD report in the product UI, and that you can communicate its value
 
 ## Prerequisites
 
-- Mac or Linux VM with Internet access
+- Mac or Linux VM (or Windows with WSL) with Internet access
 - Installed git, maven, recent Zulu v17+, recent non-Azul Java, v17+
 - Account at https://azul.crs-prod.azul.com/
 
 ## Getting Started
 
-1. Clone this repo (% git clone https://gitlab.azulsystems.com/salesengineering/se-avd-lab.git)
+1. Clone this repo (% git clone [https://gitlab.azulsystems.com/salesengineering/se-avd-lab.git](https://github.com/rstatsinger/PetclinicAVD.git))
 2. Log in to AIC and set up a Forwarder on your machine using the directions in our public docs - Forwarder setup is in the Settings portion of the UI. I suggest you download the configuration you've created into forwarder-settings.properties - you will want to edit that file and set forwarder.keystore.password to some value. Start the forwarder and verify that it’s running - you can use the **runForwarder** script from this repo as an example startup script
 
 ## Lab 1 - Onboard Petclinic into AIC using Zulu/Core and Run AVD Report
@@ -43,3 +43,5 @@
 ## API Examples
 
 The **curlExamples** folder contains some sample curl scripts for you to play with to exercise a few of the API calls.
+
+## Creating a Spreadsheet from an AVD Report
