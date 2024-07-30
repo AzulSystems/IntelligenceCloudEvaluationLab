@@ -1,0 +1,9 @@
+# example startup script for the Forwarder - place it in the same dir as your forwarder.jar and the forwarder configs and jks
+
+unset AGENTDIR
+unset CRS_TAGS
+unset JDK_JAVA_OPTIONS
+unset _JAVA_OPTIONS
+unset AZ_CRS_ARGUMENTS
+
+java -DforwarderSettings=./forwarder-settings.properties -jar ./forwarder.jar

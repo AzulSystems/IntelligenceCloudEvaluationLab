@@ -1,0 +1,10 @@
+
+APIKEY=<SET THIS>
+ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/instance/
+VMID=<SET THIS>
+
+curl -X 'GET' \
+  ''$ENDPOINT$VMID'/annotations' \
+  -H 'accept: application/json' \
+  -H 'x-api-key: '$APIKEY'' \
+  -H 'Content-Type: application/json'

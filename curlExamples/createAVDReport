@@ -1,0 +1,21 @@
+
+APIKEY=<SET THIS>
+ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/report/cve
+APPENV=<SET THIS>
+REPORTNAME=<SET THIS>
+
+curl -s -X 'POST' \
+  ''$ENDPOINT'' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'x-api-key: '$APIKEY'' \
+  -d '{
+  "filter": [
+    "tags.AppEnv = '\'$APPENV\''"
+  ],
+  "sortBy": [
+    "score=DESC",
+    "cveState=DESC"
+  ],
+  "reportName": "'$REPORTNAME'"
+}'

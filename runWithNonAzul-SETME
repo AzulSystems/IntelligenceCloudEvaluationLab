@@ -1,0 +1,25 @@
+unset AGENTDIR
+unset CRS_TAGS
+unset JDK_JAVA_OPTIONS
+unset AZ_CRS_ARGUMENTS
+unset _JAVA_OPTIONS
+
+# TODO - SET PATH TO IC AGENT AND JAVA SECURITY POLICY FILE
+
+AGENTDIR=/path/to/agent
+
+# TODO - SET TAGS!! Make sure there is a value for AppEnv
+
+export CRS_TAGS="AppName=YOUR_INITIALSPetclinic_Agent; AppEnv=YourInitialsPCAgent; usingagent=yes; username=Your_Username"
+
+export JDK_JAVA_OPTIONS="-javaagent:${AGENTDIR}/ic-agent.jar=accessor=${AGENTDIR}/ic-agent-accessor.jar \
+   -DaagentDir=${AGENTDIR} \
+   -Djava.security.policy=${AGENTDIR}/agent.all.policy"
+
+# set up for class level code inventory, which is the default. IC Agent does not support method-level
+# deets at https://docs.azul.com/intelligence-cloud/detailed-information/diagnostic-configuration#diagnostics-crs-arguments
+
+export AZ_CRS_ARGUMENTS="log=info,UnlockExperimentalCRS,enable,api.url=https://localhost,delayInitiation=0,delayTermination=120000"
+
+java -jar target/spring-petclinic-3.0.0-SNAPSHOT.jar
+

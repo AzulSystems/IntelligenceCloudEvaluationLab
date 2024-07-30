@@ -1,0 +1,10 @@
+
+APIKEY=<SET THIS>
+ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/report/cve/
+REPORTID=<SET THIS>
+
+curl -X 'GET' \
+  ''$ENDPOINT$REPORTID'' \
+  -H 'accept: application/json' \
+  -H 'x-api-key: '$APIKEY'' \
+  -H 'Content-Type: application/json'
