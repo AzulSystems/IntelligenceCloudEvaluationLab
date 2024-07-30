@@ -2,7 +2,7 @@
 
 ## Intro
 
-Welcome to the Azul Partner Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Azul Code Inventory (ACI).
+Welcome to the Azul Partner Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Code Inventory (CI).
 
 ## Goals
 
@@ -13,7 +13,7 @@ Welcome to the Azul Partner Lab for the Azul Intelligence Cloud (AIC). This repo
     3. the instructions for importing an AVD report into a spreadsheet - they are at the end of this README.
 - End up with a running instance in AIC for both AVD and CI. Class-level CI is enabled by default.
 - Ensure that you can generate an AVD report in the product UI and that if needed you can convert it to a spreadsheet (your Azul SE will assist you with this)
-- Ensure that you can generate an ACI report using the Intelligence Cloud Client
+- Ensure that you can generate a CI report using the Intelligence Cloud Client
 
 ## Prerequisites
 
@@ -53,11 +53,11 @@ The **curlExamples** folder contains some sample curl scripts for you to play wi
 
 Make sure you have completed Lab 1 before attempting this lab.
 
-1. If you recently did Lab 1 and you set an AppEnv tag, you should have a runnable instance set up for both AVD and Class-level ACI. Restart Petclinic with a different tag for the appname than you did before so that you can easily tell that your new instance is onboarded - make sure you've set a value for the AppEnv tag.
-2. This lab explores class-level ACI, which is thea default. Method-level ACI will be explored in a subsequent lab.
+1. If you recently did Lab 1 and you set an AppEnv tag, you should have a runnable instance set up for both AVD and Class-level CI. Restart Petclinic with a different tag for the appname than you did before so that you can easily tell that your new instance is onboarded - make sure you've set a value for the AppEnv tag.
+2. This lab explores class-level CI, which is thea default. Method-level CI will be explored in a subsequent lab.
 3. Make sure a tag value for **AppEnv** is included in your tags. **AppEnv** is a special tag that links running instances in AIC with client side processing of application jarfiles - it's the "glue" between the code that AIC has seen run, and all of the code that could run. It will be used by the IC Client to generate an HTML report on the code that has not run. An example for Petclinic might be AppEnv='Petclinic-YourInitials-CurrentDate' If you set AppEnv for the AVD lab, make sure you know its value.
 4. Azul will provide to you the Intelligence Cloud Client jarfile. Note: this is a pre-release of the client. Please do not share it outside of your team.
-5. An instance needs to run in ACI "for a while" so that a customer feels confident that all of the code that might run has actually run. How long is "a while"? It depends:
+5. An instance needs to run in CI "for a while" so that a customer feels confident that all of the code that might run has actually run. How long is "a while"? It depends:
     - A few minutes to hours, will tell you what's used when the app starts. This also tells you when you come back later you'll have more. You generally wouldn't act on this report. Do this for this lab.
     - A few days to a week, will tell you what's used generally. The app will have gotten a little traffic so an engineer can find what they were maybe suspicious about or get a feel for what would happen if they ran the report for longer. Do this for a pilot.
     - A week or more will provide a more complete picture of things. The longer you wait the more "firsts" you'll see, up to a point. One week of data should be sufficient for a pilot -- the customer would then just do the same thing for longer. Customer environments should watch for longer, generally across month-end or periods of special time/peak usage.
