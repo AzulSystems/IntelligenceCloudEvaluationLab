@@ -54,7 +54,7 @@ The **curlExamples** folder contains some sample curl scripts for you to play wi
 Make sure you have completed Lab 1 before attempting this lab.
 
 1. If you recently did Lab 1 and you set an AppEnv tag, you should have a runnable instance set up for both AVD and Class-level CI. Restart Petclinic with a different tag for the appname than you did before so that you can easily tell that your new instance is onboarded - make sure you've set a value for the AppEnv tag.
-2. This lab explores class-level CI, which is thea default. Method-level CI will be explored in a subsequent lab.
+2. This lab explores class-level CI, which is the default. Method-level CI will be explored in a subsequent lab.
 3. Make sure a tag value for **AppEnv** is included in your tags. **AppEnv** is a special tag that links running instances in AIC with client side processing of application jarfiles - it's the "glue" between the code that AIC has seen run, and all of the code that could run. It will be used by the IC Client to generate an HTML report on the code that has not run. An example for Petclinic might be AppEnv='Petclinic-YourInitials-CurrentDate' If you set AppEnv for the AVD lab, make sure you know its value.
 4. Azul will provide to you the Intelligence Cloud Client jarfile. Note: this is a pre-release of the client. Please do not share it outside of your team.
 5. An instance needs to run in CI "for a while" so that a customer feels confident that all of the code that might run has actually run. How long is "a while"? It depends:
