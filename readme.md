@@ -1,20 +1,25 @@
-# Azul Partner Lab for AIC Onboarding and Azul Vulnerability Detection 
+# Azul Partner Lab for Azul Intelligence Cloud
+
+## Intro
+
+Welcome to the Azul Partner Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Azul Code Inventory (ACI).
 
 ## Goals
 
-- Make sure you can onboard Petclinic into AIC both with and without the IC Agent
-- Make sure you can accomplish the labs using these 3 items:
+- Make sure you can onboard Petclinic into the AIC.
+- Make sure you can accomplish these labs using these 3 items:
     1. this README (please follow it end to end and don't skip any steps :))
     2. our Public Docs at https://docs.azul.com/intelligence-cloud/
-    3. the instructions for importing an AVD report into a spreadsheet - they are at the end of this README
+    3. the instructions for importing an AVD report into a spreadsheet - they are at the end of this README.
 - End up with a running instance in AIC for both AVD and CI. Class-level CI is enabled by default.
-- Ensure that you can see the visualization for your AVD report in the product UI, and that you can communicate its value
+- Ensure that you can generate an AVD report in the product UI and that if needed you can convert it to a spreadsheet (your Azul SE will assist you with this)
+- Ensure that you can generate an ACI report using the Intelligence Cloud Client
 
 ## Prerequisites
 
 - Mac or Linux VM (or Windows with WSL) with Internet access
-- Installed git, maven, recent Zulu v17+, recent non-Azul Java, v17+
-- Account at https://azul.crs-prod.azul.com/
+- Installed git, maven, recent Zulu v17+, recent non-Azul Java v17+
+- Azul Intelligence Cloud access
 
 ## Getting Started
 
@@ -29,7 +34,7 @@
 3. Create an **AVD report** against Petclinic - make sure you are in the **Vulnerability Detection** area in the left nav of the UI - make sure the report name includes your initials
 4. Wait a few minutes for the report to create, then download it
 5. You can now see a sortable table for the report in the AVD UI: click on the Report ID link in the Vulnerability Detection UI. This is a **goal state** for a pilot or demo for stakeholders who will be using the product directly.
-5. To share the value of AVD with other stakeholders: import the report into a spreadsheet - this spreadsheet would be a deliverable for a Pilot for other customer stakeholders - make sure you could lead a prospect through creating it and understanding it.
+5. To share the value of AVD with other stakeholders: import the report into a spreadsheet - this spreadsheet would be a deliverable for a Pilot for other customer stakeholders - your Azul SE will assist you with this.
 
 ## Lab 2 - Onboard Petclinic into AIC using non-Azul JVM and Run AVD Report
 
@@ -44,4 +49,12 @@
 
 The **curlExamples** folder contains some sample curl scripts for you to play with to exercise a few of the API calls.
 
-## Creating a Spreadsheet from an AVD Report
+## Lab 3 - Creating a Spreadsheet from an AVD Report
+TBD
+
+
+
+
+
+
+
