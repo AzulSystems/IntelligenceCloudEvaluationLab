@@ -1,7 +1,9 @@
 
-APIKEY=<SET THIS>
-ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/instance/
-VMID=<SET THIS>
+APIKEY=<SET THIS FROM SETTINGS -> PROFILE -> Show Configuration>
+## Set Endpoint from Explorer -> API - make sure to add instance/ at the end
+## example: ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/instance/
+ENDPOINT=<SET THIS>
+VMID=<SET THIS - ITS THE VM ID OF THE INSTANCE WHOSE ANNOTATIONS YOU WANT>
 
 curl -X 'GET' \
   ''$ENDPOINT$VMID'/annotations' \
