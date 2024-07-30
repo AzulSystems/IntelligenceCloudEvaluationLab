@@ -1,5 +1,5 @@
 
-APIKEY=<SET THIS FROM YOUR USER PROFILE
+APIKEY=<SET THIS FROM SETTINGS -> PROFILE>
 ## SET ENDPOINT FROM Vulnerability Detection -> API - Show Configuration
 ## Make sure to append /report/cve to the end
 ## exammple: ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/report/cve
