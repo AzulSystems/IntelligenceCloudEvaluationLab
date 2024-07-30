@@ -10,7 +10,7 @@ Welcome to the Azul Partner Lab for the Azul Intelligence Cloud (AIC). This repo
 - Make sure you can accomplish these labs using these 3 items:
     1. this README (please follow it end to end and don't skip any steps :))
     2. our Public Docs at https://docs.azul.com/intelligence-cloud/
-    3. the instructions for importing an AVD report into a spreadsheet - they are at the end of this README.
+    3. the instructions for importing an AVD report into a spreadsheet - they will be provided subsequently.
 - End up with a running instance in AIC for both AVD and CI. Class-level CI is enabled by default.
 - Ensure that you can generate an AVD report in the product UI and that if needed you can convert it to a spreadsheet (your Azul SE will assist you with this)
 - Ensure that you can generate a CI report using the Intelligence Cloud Client
