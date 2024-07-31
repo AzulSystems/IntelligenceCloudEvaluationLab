@@ -45,11 +45,7 @@ Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). T
 5. Shut down Petclinic, then onboard it into AIC using your non-Azul JDK: **edit the **runWithNonAzul-SETME** script to set the Agent Directory (the security manager file will also be expected there) as well as some tags, including AppEnv**. Run the script and verify your second Petclinic instance is there in the AVD UI
 6. Run an AVD report as you did for Lab 1
 
-## API Examples
-
-The **curlExamples** folder contains some sample curl scripts for you to play with to exercise a few of the API calls.
-
-## Lab 3 - Generate a Code Inventory Report showing unused Code
+## Lab 3 - Generate a Graphical Code Inventory Report Showing unused Code
 
 Make sure you have completed Lab 1 before attempting this lab.
 
@@ -69,7 +65,7 @@ java -jar ./icclient.jar unused-code-diff --appenv=**YourAppEnvTag** --ic=**Your
 
 Make sure you substitute in your AppEnv tag, your Public Endpoint, and your API key.
 
-9. The result should be a new subdirectory called **PetClinicCodeInventory**. There should be an index.html file in there - open it in your favorite browser. Read through the contents. You will also find a json file in the subdirectory called **all-code.json** - in the left nav of the index.html file there is a link to Load JSON. Use it to import all-code.json into the browser. The result will be a graphical analysis of the used and unused code for Petclinic. Click into the report and examine the details.
+9. The result should be a new subdirectory called **PetClinicCodeInventory**. There should be an index.html file in there - open it in your favorite browser. Read through the contents. You will also find a json file in the subdirectory called **all-code.json** - in the left nav of the index.html file there is a link to **Load JSON**. Use it to import all-code.json into the browser. The result will be a graphical analysis of the used and unused code for Petclinic. Click into the report and examine the details.
 
 ## Lab 4 - Method Level Code Inventory
 
@@ -80,6 +76,11 @@ If method-level CI is desired, do the following:
 3. Wait a few minutes and then re-run the IC Client jarfile as above, adding **--methods** to the end of the command.
 
 ## Lab 5 - Creating a Spreadsheet from an AVD Report - TBD
+
+## Lab 6 - API Examples
+
+The **curlExamples** folder contains some sample curl scripts for you to play with to exercise a few of the API calls.
+
 
 
 
