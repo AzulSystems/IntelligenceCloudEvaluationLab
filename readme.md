@@ -46,8 +46,7 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 1. Shut down Petclinic
 2. Switch from Zulu to your non-Azul JDK so that java --version shows the new JDK
 3. Rebuild Petclinic then re-run it  - **% source build** then **% source run** - verify that you see the Petclinic UI at http://localhost:8080
-4. Install the IC Agent from **Settings -> Agent** in the AIC UI. Remember to configure the security manager - you might need it during Pilots
-5. Shut down Petclinic, then onboard it into AIC using your non-Azul JDK: **edit the **runWithNonAzul-SETME** script to set the Agent Directory (the security manager file will also be expected there) as well as some tags, including AppEnv**. Run the script and verify your second Petclinic instance is there in the AVD UI
+5. Shut down Petclinic, then onboard it into AIC using your non-Azul JDK: **edit the **runWithNonAzul-SETME** script to set some tags, including AppEnv**. Run the script and verify your second Petclinic instance is there in the AVD UI
 6. Run an AVD report as you did for Lab 1
 
 ## Lab 3 - Generate a Graphical Code Inventory Report Showing Unused Code
