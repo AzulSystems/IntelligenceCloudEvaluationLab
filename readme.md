@@ -35,8 +35,8 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 
 0. Make sure Zulu is your active JDK
 1. Build and run Petclinic using Zulu/Core - **% source build** then **% source run** -  verify that you see the Petclinic UI at http://localhost:8080
-2. Shut down Petclinic, then onboard it into AVD: **edit the **runWithAVDZulu-SETME** script to set tags, including AppEnv**, then run the script - verify your Petclinic instance is there in the AVD UI - might take 5 minutes to show up
-3. Create an **AVD report** against Petclinic - make sure you are in the **Vulnerability Detection** area in the left nav of the UI - make sure the report name includes your initials
+2. Shut down Petclinic, then onboard it into AVD: **edit the **runWithAVDZulu-SETME** script to set tags, including AppEnv**, then run the script - verify your Petclinic instance is there in the AVD UI - it might take a minute or two to show up.
+3. Create an **AVD report** against Petclinic - make sure you are in the **Vulnerability Detection** area in the left nav of the UI. Give the report a descriptive name.
 4. Wait a few minutes for the report to create, then download it
 5. You can now see a sortable table for the report in the AVD UI: click on the Report ID link in the Vulnerability Detection UI. This is a **goal state** for a pilot or demo for stakeholders who will be using the product directly.
 5. To share the value of AVD with other stakeholders: import the report into a spreadsheet - this spreadsheet would be a deliverable for a Pilot for other customer stakeholders - your Azul SE will assist you with this.
@@ -46,7 +46,7 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 1. Shut down Petclinic
 2. Switch from Zulu to your non-Azul JDK so that java --version shows the new JDK
 3. Rebuild Petclinic then re-run it  - **% source build** then **% source run** - verify that you see the Petclinic UI at http://localhost:8080
-4. Install the IC Agent from the instructions in our public docs - remember to configure the security manager - you might need it during Pilots
+4. Install the IC Agent from **Settings -> Agent** in the AIC UI. Remember to configure the security manager - you might need it during Pilots
 5. Shut down Petclinic, then onboard it into AIC using your non-Azul JDK: **edit the **runWithNonAzul-SETME** script to set the Agent Directory (the security manager file will also be expected there) as well as some tags, including AppEnv**. Run the script and verify your second Petclinic instance is there in the AVD UI
 6. Run an AVD report as you did for Lab 1
 
