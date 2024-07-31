@@ -1,8 +1,8 @@
-# Azul Partner Lab for Azul Intelligence Cloud
+# Azul Systems Partner Lab for Azul Intelligence Cloud
 
 ## Intro
 
-Welcome to the Azul Partner Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Code Inventory (CI).
+Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Code Inventory (CI).
 
 ## Goals
 
