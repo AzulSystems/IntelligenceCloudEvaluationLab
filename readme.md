@@ -75,9 +75,10 @@ Make sure you substitute in your AppEnv tag, your Public Endpoint, and your API 
 
 If method-level CI is desired, do the following:
 
-1. edit the file **runWithAICZulu-SETME** and add **notifyFirstCall=true** to the **AZ_CRS_ARGUMENTS** environment variable.
-2. Restart PetClinic
-3. Wait a few minutes and then re-run the IC Client jarfile as above, adding **--methods** to the end of the command.
+1. Make sure Zulu is your current active JDK.
+2. Edit the file **runWithAICZulu-SETME** and add **notifyFirstCall=true** to the **AZ_CRS_ARGUMENTS** environment variable.
+3. Restart PetClinic
+4. Wait a few minutes and then re-run the IC Client jarfile as above, adding **--methods** to the end of the command.
 
 ## Lab 5 - Creating a Spreadsheet from an AVD Report - TBD
 
