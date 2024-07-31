@@ -6,7 +6,7 @@ unset _JAVA_OPTIONS
 
 # TODO - SET PATH TO IC AGENT AND JAVA SECURITY POLICY FILE
 
-AGENTDIR=/path/to/agent
+AGENTDIR=./Agent
 
 # TODO - SET TAGS!! Make sure there is a value for AppEnv
 
