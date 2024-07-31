@@ -26,7 +26,7 @@ Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). T
 1. Clone this repo (% git clone [https://gitlab.azulsystems.com/salesengineering/se-avd-lab.git](https://github.com/rstatsinger/PetclinicAVD.git))
 2. Log in to AIC and set up a Forwarder on your machine using the directions in our public docs - Forwarder setup is in the Settings portion of the UI. I suggest you download the configuration you've created into forwarder-settings.properties - you will want to edit that file and set forwarder.keystore.password to some value. Start the forwarder and verify that it’s running - you can use the **runForwarder** script from this repo as an example startup script
 
-## Lab 1 - Onboard Petclinic into AIC using Zulu/Core and Run AVD Report
+## Lab 1 - Onboard Petclinic into AIC using Zulu/Core and Create an AVD Report
 
 0. Make sure Zulu is your active JDK
 1. Build and run Petclinic using Zulu/Core - **% source build** then **% source run** -  verify that you see the Petclinic UI at http://localhost:8080
@@ -36,7 +36,7 @@ Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). T
 5. You can now see a sortable table for the report in the AVD UI: click on the Report ID link in the Vulnerability Detection UI. This is a **goal state** for a pilot or demo for stakeholders who will be using the product directly.
 5. To share the value of AVD with other stakeholders: import the report into a spreadsheet - this spreadsheet would be a deliverable for a Pilot for other customer stakeholders - your Azul SE will assist you with this.
 
-## Lab 2 - Onboard Petclinic into AIC using non-Azul JVM and Run AVD Report
+## Lab 2 - Onboard Petclinic into AIC using non-Azul JVM and Create an AVD Report
 
 1. Shut down Petclinic
 2. Switch from Zulu to your non-Azul JDK so that java --version shows the new JDK
@@ -45,7 +45,7 @@ Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). T
 5. Shut down Petclinic, then onboard it into AIC using your non-Azul JDK: **edit the **runWithNonAzul-SETME** script to set the Agent Directory (the security manager file will also be expected there) as well as some tags, including AppEnv**. Run the script and verify your second Petclinic instance is there in the AVD UI
 6. Run an AVD report as you did for Lab 1
 
-## Lab 3 - Generate a Graphical Code Inventory Report Showing unused Code
+## Lab 3 - Generate a Graphical Code Inventory Report Showing Unused Code
 
 Make sure you have completed Lab 1 before attempting this lab.
 
