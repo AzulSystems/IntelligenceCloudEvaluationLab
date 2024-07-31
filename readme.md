@@ -25,7 +25,7 @@ Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). T
 
 1. Clone this repo (% git clone [https://gitlab.azulsystems.com/salesengineering/se-avd-lab.git](https://github.com/rstatsinger/PetclinicAVD.git))
 2. Log in to AIC and confirm you have access
-3. In your clone of this repo, cd into the **Forwarder** subdirectory and type **source runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
+3. In your clone of this repo, cd into the **Forwarder** subdirectory and type **source ./runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
 
 [INFO] c.a.c.f.Forwarder - Start forwarding *:443 to logicalis.api.crs-prod.azul.com:443
 
