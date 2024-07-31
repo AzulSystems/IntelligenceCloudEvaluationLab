@@ -24,7 +24,11 @@ Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). T
 ## Getting Started
 
 1. Clone this repo (% git clone [https://gitlab.azulsystems.com/salesengineering/se-avd-lab.git](https://github.com/rstatsinger/PetclinicAVD.git))
-2. Log in to AIC and set up a Forwarder on your machine using the directions in our public docs - Forwarder setup is in the Settings portion of the UI. I suggest you download the configuration you've created into forwarder-settings.properties - you will want to edit that file and set forwarder.keystore.password to some value. Start the forwarder and verify that it’s running - you can use the **runForwarder** script from this repo as an example startup script
+2. Log in to AIC and confirm you have access
+3. In your clone of this repo, cd into the **Forwarder** subdirectory and type **source runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
+
+[INFO] c.a.c.f.Forwarder - Start forwarding *:443 to logicalis.api.crs-prod.azul.com:443
+
 
 ## Lab 1 - Onboard Petclinic into AIC using Zulu/Core and Create an AVD Report
 
