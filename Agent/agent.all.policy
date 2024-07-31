@@ -1,0 +1,6 @@
+grant codeBase "jar:file:${aagentDir}/ic-agent-accessor.jar!/" {
+    permission java.security.AllPermission;
+};
+grant codeBase "jar:file:${aagentDir}/ic-agent.jar!/" {
+    permission java.security.AllPermission;
+};
