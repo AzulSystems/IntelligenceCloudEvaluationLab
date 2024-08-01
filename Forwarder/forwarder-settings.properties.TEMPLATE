@@ -1,0 +1,7 @@
+# Create a Forwarder in the AIC UI Settings -> Forwarders, then download forwarder-settings.properties to this directory
+#
+ic.host = <Your Forwarder URL>
+forwarder.access.key = <Your Forwarder Access Key>
+forwarder.domain.names = <Domain for which your Forwarder can accept connections from JVMs, for example localhost>
+forwarder.keystore.path = <you can set this to ./forwarder.jks>
+forwarder.keystore.password = SuperSecretPassword
