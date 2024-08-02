@@ -7,4 +7,4 @@ unset AZ_CRS_ARGUMENTS
 
 source ./settings
 
-java -jar ./ICClient/icclient.jar unused-code-diff --appenv=$APPENV --ic=$ICAPURL --key=$APIKEY --output=./$APPENV-Report
+java -jar ./ICClient/icclient.jar unused-code-diff --appenv=$APPENV --ic=$IC_API_URL --key=$APIKEY --output=./$APPENV-Report
