@@ -30,6 +30,7 @@ Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (AIC)
 [INFO] c.a.c.f.Forwarder - Start forwarding *:443 to logicalis.api.crs-prod.azul.com:443
 
 Note: for ease of setup, this lab runs the Forwarder on the same machine as the Petclinic workload. In general customer deployments, the Forwarder will usually run on a different machine in the same network as the Java workloads.
+4. Edit the file called **settings**. Set the **APPENV** variable to something like **AzulPetclinicLabV1** and the **APPNAME** to something like **AzulPetclinic**. In the AIC UI, go to **Settings -> Profile** and generate an API KEY - copy it and set it as the value of the **APIKEY** variable. Set the IC_API_URL from **Explorer -> API - API URL**
 
 ## Lab 1 - Onboard Petclinic into AIC using Zulu/Core and Create an AVD Report
 
