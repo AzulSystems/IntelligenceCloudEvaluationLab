@@ -8,13 +8,12 @@ Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (AIC)
 
 - Onboard our version of Petclinic into the AIC and verify that its running
 - Generate an AVD report to see the Used vs Present CVEs
-- If needed, generate a spreadsheet from the AVD report (your Azul SE will assist)
+- If desired, generate a spreadsheet from the AVD report (your Azul Sales Engineer will assist)
 - Generate a Code Inventory report showing you which Petclinic code has never run
 - Experiment with a few sample API calls via cURL
-- Make sure you can accomplish these labs using these 3 items:
+- Make sure you can accomplish these labs using:
     1. This README (please follow it end to end and don't skip any steps :))
     2. Our Public Docs at https://docs.azul.com/intelligence-cloud/
-    3. If desired, you can import an AVD report into a spreadsheet - your Azul Sales Engineer can assist you with this.
 
 ## Prerequisites
 
