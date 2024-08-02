@@ -163,11 +163,13 @@
             <artifactId>checkstyle</artifactId>
             <version>10.8.1</version>
           </dependency>
+      <!--   
           <dependency>
             <groupId>io.spring.nohttp</groupId>
             <artifactId>nohttp-checkstyle</artifactId>
             <version>${nohttp-checkstyle.version}</version>
           </dependency>
+      -->
         </dependencies>
         <executions>
           <execution>
