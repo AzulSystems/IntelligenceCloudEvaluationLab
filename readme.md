@@ -37,7 +37,7 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 
 0. Make sure Zulu is your active JDK
 1. Build and run Petclinic - **% source build** then **% source run** -  verify that you see the Petclinic UI at http://localhost:8080
-2. Shut down Petclinic, then onboard it into AVD: run the **runWithAVDZulu** script - verify your Petclinic instance is there in the AVD UI - it might take a minute or two to show up.
+2. Shut down Petclinic, then onboard it into AVD: edit the **runWithAVDZulu-SETME** script to set a CRS_TAG for your username, then run the script - verify your Petclinic instance is there in the AVD UI - it might take a minute or two to show up.
 3. Create an **AVD report** against Petclinic - make sure you are in the **Vulnerability Detection** area in the left nav of the UI. Give the report a descriptive name.
 4. Wait a few minutes for the report to create. There is a graphical, sortable table for the report in the AVD UI: click on the Report ID link in the Vulnerability Detection UI and examine the CVEs. Try sorting on the columns.
 5. Download the report as a JSON file. To share the value of AVD with other stakeholders: import the report into a spreadsheet - this spreadsheet would be a deliverable for a Pilot for other customer stakeholders - your Azul SE will assist you with this.
