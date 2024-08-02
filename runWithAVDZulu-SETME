@@ -2,17 +2,21 @@
 unset CRS_TAGS
 unset _JAVA_OPTIONS
 unset AZ_CRS_ARGUMENTS
+unset AGENTDIR
+unset JDK_JAVA_OPTIONS
 
-# TODO - SET YOUR TAGS!! MAKE SURE THERE IS A VALUE FOR AppEnv
+source ./settings
 
-export CRS_TAGS="appname=Your_InitialsPetclinicZulu; AppEnv=YourInitialsPetClinic; username=Your_Username"
+# TODO - SET YOUR username TAG 
+
+export CRS_TAGS="appname=$APPNAME; AppEnv=$APPENV; username=Your_Username"
 
 export _JAVA_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:AzCRSMode=on"
 
 # api.url is the Forwarder
 # set up for class level code inventory, which is the default
-# for method-level Code Inventory, add notifyFirstCall=true into these arguments
-# deets at https://docs.azul.com/intelligence-cloud/detailed-information/diagnostic-configuration#diagnostics-crs-arguments
+#
+# details at https://docs.azul.com/intelligence-cloud/detailed-information/diagnostic-configuration#diagnostics-crs-arguments
 
 export AZ_CRS_ARGUMENTS="UnlockExperimentalCRS,log=info,delayTermination=120000,delayInitiation=0,api.url=https://localhost"
 
