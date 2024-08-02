@@ -1,4 +1,4 @@
-# example startup script for the Forwarder - place it in the same dir as your forwarder.jar and the forwarder configs and jks
+# example startup script for the Forwarder - place it in the same dir as your forwarder.jar and the forwarder configs
 
 unset AGENTDIR
 unset CRS_TAGS
