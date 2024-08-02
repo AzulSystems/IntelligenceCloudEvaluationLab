@@ -9,7 +9,7 @@ source ./settings
 
 # TODO - SET YOUR username TAG 
 
-export CRS_TAGS="appname=$APPNAME; AppEnv=$APPENV; username=Your_Username"
+export CRS_TAGS="appname=$APPNAME; AppEnv=$APPENV; username=$USERNAME"
 
 export _JAVA_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:AzCRSMode=on"
 
