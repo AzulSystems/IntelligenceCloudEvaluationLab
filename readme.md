@@ -28,7 +28,7 @@ Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (AIC)
 2. Log in to AIC and confirm you have access. Go to **Settings -> Forwarders** and create a Forwarder. Give it a name such as **MyTestForwarder1** and set the **Domain names** to **localhost**. Download the settings (click the blue **Download as file** button) and save the file into the **Forwarder** subdirectory of your cloned repo. The file will be called **forwarder-settings.properties**. Edit the file and set the keystore path to **./forwarder.jks** and set a keystore password of your choosing.
 3. In your cloned repo, cd into the **Forwarder** subdirectory and type **source ./runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
 
-[INFO] c.a.c.f.Forwarder - Start forwarding *:443 to **<your instance name>**.api.crs-prod.azul.com:443
+[INFO] c.a.c.f.Forwarder - Start forwarding *:443 to (your instance name).api.crs-prod.azul.com:443
 
 Note: for ease of setup, this lab runs the Forwarder on the same machine as the Petclinic workload. In general deployments, the Forwarder will usually run on a different machine in the same network as the Java workloads. You can have multiple Forwarders for different geographies or network segments, and multiple JVMs can talk to a single Forwarder.
 
