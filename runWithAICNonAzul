@@ -8,8 +8,6 @@ source ./settings
 
 AGENTDIR=./Agent
 
-# TODO - SET YOUR USERNAME TAG
-
 export CRS_TAGS="AppName=$APPNAME-Agent; AppEnv=$APPENV-Agent; usingagent=yes; username=$USERNAME"
 
 export JDK_JAVA_OPTIONS="-javaagent:${AGENTDIR}/ic-agent.jar=accessor=${AGENTDIR}/ic-agent-accessor.jar \
