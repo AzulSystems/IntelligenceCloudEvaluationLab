@@ -1,24 +1,24 @@
-# Azul Systems Partner Lab for Azul Intelligence Cloud
+# Azul Systems Evaluation Lab for Azul Intelligence Cloud
 
 ## Intro
 
-Welcome to the Azul Systems Partner Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Code Inventory (CI).
+Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Code Inventory (CI).
 
 ## Goals
 
-- Make sure you can onboard Petclinic into the AIC.
+- Onboard our version of Petclinic into the AIC and verify that its running
+- Generate an AVD report to see the Used vs Present CVEs
+- If needed, generate a spreadsheet from the AVD report (your Azul SE will assist)
+- Generate a Code Inventory report showing you which Petclinic code has never run
 - Make sure you can accomplish these labs using these 3 items:
-    1. this README (please follow it end to end and don't skip any steps :))
-    2. our Public Docs at https://docs.azul.com/intelligence-cloud/
-    3. the instructions for importing an AVD report into a spreadsheet - they will be provided subsequently.
-- End up with a running instance in AIC for both AVD and CI. Class-level CI is enabled by default.
-- Ensure that you can generate an AVD report in the product UI and that if needed you can convert it to a spreadsheet (your Azul SE will assist you with this)
-- Ensure that you can generate a CI report using the Intelligence Cloud Client
+    1. This README (please follow it end to end and don't skip any steps :))
+    2. Our Public Docs at https://docs.azul.com/intelligence-cloud/
+    3. The instructions for importing an AVD report into a spreadsheet - they will be provided by your Azul SE
 
 ## Prerequisites
 
 - Mac or Linux VM (or Windows with WSL) with Internet access
-- Installed git, maven, recent Zulu v17+, recent non-Azul Java v17+
+- Installed git, maven, recent Zulu v17+, recent non-Azul Java v17+ (optional)
 - Azul Intelligence Cloud access
 
 ## Getting Started
