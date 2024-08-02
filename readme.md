@@ -24,7 +24,7 @@ Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (AIC)
 ## Getting Started
 
 1. Clone this repo (% git clone https://github.com/rstatsinger/AzulSystemsEvalLabforAIC)
-2. Log in to AIC and confirm you have access. Go to **Settings -> Forwarders** and create a Forwarder. Give it a name such as **MyTestForwarder1** and set the **Domain names** to **localhost**. Download the settings (click the blue **Download as file** button) and save the file into the **Forwarder** subdirectory of your cloned repo.
+2. Log in to AIC and confirm you have access. Go to **Settings -> Forwarders** and create a Forwarder. Give it a name such as **MyTestForwarder1** and set the **Domain names** to **localhost**. Download the settings (click the blue **Download as file** button) and save the file into the **Forwarder** subdirectory of your cloned repo. The file will be called **forwarder-settings.properties**. Edit the file and set the keystore path to ./forwarder.jks and set a keystore password of your choosing.
 3. cd into the **Forwarder** subdirectory and type **source ./runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
 
 [INFO] c.a.c.f.Forwarder - Start forwarding *:443 to logicalis.api.crs-prod.azul.com:443
