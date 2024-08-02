@@ -4,10 +4,12 @@
 
 Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (AIC). This repo will help you quickly get started with AIC and two of its key features: Azul Vulnerability Detection (AVD) and Code Inventory (CI).
 
+The lab uses a version of the Petclinic application as the target. Azul has just added additional packages and classes to the application for demonstration purposes. All of the source code is included in the repository.
+
 ## Goals
 
 - Onboard our version of Petclinic into the AIC and verify that its running
-- Generate an AVD report to see the Used vs Present CVEs
+- Generate an AVD report to see the Used vs Present CVEs and understand how this can help prioritize vulnerability triage and remediation
 - If desired, generate a spreadsheet from the AVD report (your Azul Sales Engineer will assist)
 - Generate a graphical Code Inventory report showing you which Petclinic code has never run
 - Experiment with a few sample API calls via cURL
