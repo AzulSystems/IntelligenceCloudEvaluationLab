@@ -1,0 +1,10 @@
+
+unset AGENTDIR
+unset CRS_TAGS
+unset JDK_JAVA_OPTIONS
+unset _JAVA_OPTIONS
+unset AZ_CRS_ARGUMENTS
+
+source ./settings
+
+java -jar ../../ICClient/icclient.jar unused-code-diff --appenv=$APPENV --ic=$ICAPURL --key=$APIKEY --output=./$APPENV-Report
