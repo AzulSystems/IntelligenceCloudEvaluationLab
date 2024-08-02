@@ -43,7 +43,9 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 4. Wait a few minutes for the report to create. There is a graphical, sortable table for the report in the AVD UI: click on the Report ID link in the Vulnerability Detection UI and examine the CVEs. Try sorting on the columns.
 5. Download the report as a JSON file. To share the value of AVD with other stakeholders, you can import the report into a spreadsheet - your Azul Sales Engineer can assist you with this.
 
-## Lab 2 - Onboard Petclinic into AIC using non-Azul JVM and Create an AVD Report
+## Optional Lab 2 - Onboard Petclinic into AIC using non-Azul JVM and Create an AVD Report
+
+Do this lab if you want to onboard into AIC and you are not using an Azul JDK.
 
 1. Shut down Petclinic
 2. Switch from Zulu to your non-Azul JDK so that java --version shows the new JDK
