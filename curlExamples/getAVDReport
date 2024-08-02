@@ -1,9 +1,14 @@
 
+# This is an example of getting an already created AVD report. You could use this to pull the
+# report into your toolchain. You will need the Report ID from the AVD UI
+
 APIKEY=<SET THIS FROM PROFILE -> SETTINGS -> Show Configuration>
+
 ## Set ENDPOINT from Vulnerability Detection -> API - Show Configuration
 ## Make sure you append /report/cve to the end
 ## example: ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/report/cve/
 ENDPOINT=<SET THIS>
+
 REPORTID=<SET THIS>
 
 curl -X 'GET' \
