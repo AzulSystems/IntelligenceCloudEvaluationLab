@@ -8,7 +8,7 @@ source ./settings
 
 AGENTDIR=./Agent
 
-# TODO - SET TAGS!
+# TODO - SET YOUR USERNAME TAG
 
 export CRS_TAGS="AppName=$APPNAME-Agent; AppEnv=$APPENV-Agent; usingagent=yes; username=Your_Username"
 

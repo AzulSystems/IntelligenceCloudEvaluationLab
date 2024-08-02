@@ -11,6 +11,19 @@ CREATE TABLE IF NOT EXISTS specialties (
   INDEX(name)
 ) engine=InnoDB;
 
+/*
+
+CREATE TABLE IF NOT EXISTS stores (
+  id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(80),
+  address VARCHAR(80),
+  city VARCHAR(80),
+  state VARCHAR(80),
+  INDEX(name)
+) engine=InnoDB;
+
+*/
+
 CREATE TABLE IF NOT EXISTS vet_specialties (
   vet_id INT(4) UNSIGNED NOT NULL,
   specialty_id INT(4) UNSIGNED NOT NULL,
