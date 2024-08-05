@@ -38,9 +38,9 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 ## Lab 1 - Onboard Petclinic into AIC using Zulu/Core and Create an AVD Report
 
 0. Make sure Zulu is your active JDK
-1. Build and run Petclinic - **% source build** then **% source run** -  verify that you see the Petclinic UI at http://localhost:8080
-2. Shut down Petclinic, then onboard it into AVD: run the **runWithAICZulu** script - verify your Petclinic instance is there in the AVD UI - it might take a minute or two to show up.
-3. It may take another minute or two for initial CVE information to show up. Make sure you are in the **Vulnerability Detection** area in the left nav of the AIC UI. Create an **AVD report** against Petclinic - Give the report a descriptive name.
+1. Build Petclinic - **% source build** 
+2. Run Petclinic and onboard it into AVD: run the **runWithAICZulu** script - verify that Petclinic comes up at localhost:8080 and that your Petclinic instance is there in the AVD UI - it might take a minute or two to show up.
+3. It may take another few minutes for initial CVE information to show up. Once you see it, make sure you are in the **Vulnerability Detection** area in the left nav of the AIC UI. Create an **AVD report** against Petclinic - Give the report a descriptive name.
 4. Wait a few minutes for the report to create. There is a graphical, sortable table for the report in the AVD UI: click on the Report ID link in the Vulnerability Detection UI and examine the CVEs. Try sorting on the columns.
 5. Download the report as a JSON file. To share the value of AVD with other stakeholders, you can import the report into a spreadsheet - your Azul Sales Engineer can assist you with this.
 
@@ -50,8 +50,8 @@ Do this lab if you want to onboard into AIC and you are not using an Azul JDK.
 
 1. Shut down Petclinic
 2. Switch from Zulu to your non-Azul JDK so that java --version shows the new JDK
-3. Rebuild Petclinic then re-run it  - **% source build** then **% source run** - verify that you see the Petclinic UI at http://localhost:8080
-5. Shut down Petclinic, then onboard it into AIC using your non-Azul JDK: run the **runWithAICNonAzul** script and verify your second Petclinic instance is there in the AVD UI
+3. Rebuild Petclinic - **% source build** 
+5. Run Petclinic and onboard it into AIC using your non-Azul JDK: run the **runWithAICNonAzul** script and verify that Petclinic comes up at localhost:8080 and that your second Petclinic instance is there in the AVD UI
 6. Run an AVD report as you did for Lab 1
 
 ## Lab 3 - Generate a Graphical Code Inventory Report Showing Unused Code
