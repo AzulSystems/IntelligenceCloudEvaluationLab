@@ -1,5 +1,5 @@
 export APPENV=<SET THIS - example: YourInitials-PetclinicAICLab>
-export APPNAME=<SET THIS - example: PetclinicAICLab
+export APPNAME=<SET THIS - example: PetclinicAICLab>
 export APIKEY=<SET FROM YOUR AIC Settings -> Profile>
 export IC_API_URL=<SET FROM YOUR AIC API Settings - example: https://azul.public-api.crs-prod.azul.com/public>
 export USERNAME=<your name, initials, or anything you like>
