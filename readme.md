@@ -26,14 +26,13 @@ The lab uses a version of the Petclinic application as the target. Azul has just
 ## Getting Started
 
 1. Clone this repo (% git clone https://github.com/rstatsinger/AzulSystemsEvalLabforAIC)
-2. Log in to AIC and confirm you have access. Go to **Settings -> Forwarders** and create a Forwarder. Give it a name such as **MyTestForwarder1** and set the **Domain names** to **localhost**. Download the settings (click the blue **Download as file** button) and save the file into the **Forwarder** subdirectory of your cloned repo. The file will be called **forwarder-settings.properties**. Edit the file and set the keystore path to **./forwarder.jks** and set a keystore password of your choosing.
-3. In your cloned repo, cd into the **Forwarder** subdirectory and type **source ./runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
+2. In your cloned repo, edit the file called **settings**. Log into AIC and confirm you have access, then go to Explorer -> API and generate an API Key. Copy the key and paste it in the file for the value of the APIKEY environment variable. From the same screen, copy the API URL and paste it into the **settings** file for the **IC_API_URL** variable. Also set the **APPENV** variable to something like **AzulPetclinicLabV1** and the **APPNAME** to something like **AzulPetclinic**.
+2. In the AIC UI, go to **Settings -> Forwarders** and create a Forwarder. Give it a name such as **MyTestForwarder1** and set the **Domain names** to **localhost**. Download the settings (click the blue **Download as file** button) and save the file into the **Forwarder** subdirectory of your cloned repo. The file will be called **forwarder-settings.properties**. Edit the file and set the keystore path to **./forwarder.jks** and set a keystore password of your choosing.
+4. In your cloned repo, cd into the **Forwarder** subdirectory and type **source ./runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
 
 [INFO] c.a.c.f.Forwarder - Start forwarding *:443 to (your instance name).api.crs-prod.azul.com:443
 
 Note: for ease of setup, this lab runs the Forwarder on the same machine as the Petclinic workload. In general deployments, the Forwarder will usually run on a different machine in the same network as the Java workloads. You can have multiple Forwarders for different geographies or network segments, and multiple JVMs can talk to a single Forwarder.
-
-4. In your cloned repo, edit the file called **settings**. Set the **APPENV** variable to something like **AzulPetclinicLabV1** and the **APPNAME** to something like **AzulPetclinic**. In the AIC UI, go to **Settings -> Profile** and generate an API KEY - copy it and set it as the value of the **APIKEY** variable. Set the **IC_API_URL** from **Explorer -> API -> API URL**. Set **USERNAME** to anything you like.
 
 ## Lab 1 - Onboard Petclinic into AIC using Zulu/Core and Create an AVD Report
 
