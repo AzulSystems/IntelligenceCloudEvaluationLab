@@ -6,6 +6,6 @@ unset JDK_JAVA_OPTIONS
 unset _JAVA_OPTIONS
 unset AZ_CRS_ARGUMENTS
 
-wget https://cdn.azul.com/forwarder/1.0.7/forwarder.jar
+wget `curl -s https://cdn.azul.com/forwarder/forwarder.json | grep url | cut -d"\"" -f4`
 
 java -DforwarderSettings=./forwarder-settings.properties -jar ./forwarder.jar
