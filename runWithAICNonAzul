@@ -8,12 +8,10 @@ source ./settings
 
 AGENTDIR=./Agent
 
-# TO DO - autodownload agent
-#
-# cd $AGENTDIR
-# wget https://cdn.azul.com/ic-agent/azul-ic-agent-1.0.96.zip
-# unzip azul-ic-agent-1.0.96.zip
-# cd ..
+cd $AGENTDIR
+wget `curl -s https://cdn.azul.com/ic-agent/ic-agent.json | grep url | cut -d"\"" -f4`
+unzip *.zip
+cd ..
 
 export CRS_TAGS="AppName=$APPNAME-Agent; AppEnv=$APPENV-Agent; usingagent=yes; username=$USERNAME"
 
