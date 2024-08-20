@@ -27,7 +27,7 @@ The lab uses a version of the Petclinic application as the target. Azul has just
 
 1. Clone this repo (% git clone https://github.com/rstatsinger/AzulSystemsEvalLabforAIC)
 2. In your cloned repo, edit the file called **settings**. Log into AIC and confirm you have access, then go to Settings -> Forwarders and click on the **default** forwarder, then click **Show Settings** in the middle of the page. Copy the values of **ic.host** and **forwarder.access.key** and paste them into the settings file. Now go to Explorer -> API and generate an API Key. Copy the key and paste it in the file for the value of the **APIKEY** environment variable. From the same screen, copy the API URL and paste it into the **settings** file for the **IC_API_URL** variable. Also set the **APPENV** variable to something like **AzulPetclinicLabV1-YourInitials** and the **APPNAME** to something like **AzulPetclinic-YourInitials**.
-3. In your cloned repo, cd into the **Forwarder** subdirectory and type **source ./runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
+3. cd into the **Forwarder** subdirectory and type **source ./runForwarder**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
 
 [INFO] c.a.c.f.Forwarder - Start forwarding *:443 to (your instance name).api.crs-prod.azul.com:443
 
