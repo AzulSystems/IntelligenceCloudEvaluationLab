@@ -1,8 +1,8 @@
-export IC_HOST=<your-endpoint>.azul.com
-export FORWARDER_ACCESS_KEY=<forwarder-access-key>
-export FORWARDER_DOMAIN_NAMES=<domain-names-from-web-ui>
-export FORWARDER_KEYSTORE_PATH=<path-to-keystore>/forwarder.jks
-export FORWARDER_KEYSTORE_PASSWORD=<desired keystore password>
+export IC_HOST=<SET THIS FROM THE FORWARDER DETAILS PAGE PREPOPULATED SETTINGS
+export FORWARDER_ACCESS_KEY=<SET THIS FROM THE FORWARDER DETAILS PAGE PREPOPULATED SETTINGS>
+export FORWARDER_DOMAIN_NAMES=localhost
+export FORWARDER_KEYSTORE_PATH=./forwarder.jks
+export FORWARDER_KEYSTORE_PASSWORD=SecretPassword
 
 export APPENV=<SET THIS - example: YourInitials-PetclinicAICLab>
 export APPNAME=<SET THIS - example: PetclinicAICLab>
