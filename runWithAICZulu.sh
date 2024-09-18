@@ -5,7 +5,7 @@ unset AZ_CRS_ARGUMENTS
 unset AGENTDIR
 unset JDK_JAVA_OPTIONS
 
-source ./.env
+. ./.env
 
 export CRS_TAGS="AppName=$APPNAME; AppEnv=$APPENV; username=$USERNAME"
 export _JAVA_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:AzCRSMode=on"
