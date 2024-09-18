@@ -8,6 +8,6 @@ unset AZ_CRS_ARGUMENTS
 
 wget `curl -s https://cdn.azul.com/forwarder/forwarder.json | grep url | cut -d"\"" -f4`
 
-source ../.env
+. ../.env
 
 java -jar ./forwarder.jar
