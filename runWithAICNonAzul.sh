@@ -4,7 +4,7 @@ unset JDK_JAVA_OPTIONS
 unset AZ_CRS_ARGUMENTS
 unset _JAVA_OPTIONS
 
-source ./.env
+. ./.env
 
 AGENTDIR=./Agent
 
