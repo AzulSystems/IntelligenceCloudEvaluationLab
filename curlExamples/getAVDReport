@@ -1,6 +1,6 @@
 
 # This is an example of getting an already created AVD report. You could use this to pull the
-# report into your toolchain. You will need the Report ID from the AVD UI
+# report into your toolchain. You will need the get CVE report endpoint and your Report ID from the AVD UI
 
 APIKEY=<SET THIS FROM PROFILE -> SETTINGS -> Show Configuration>
 
