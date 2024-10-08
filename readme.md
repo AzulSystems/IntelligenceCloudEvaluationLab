@@ -21,7 +21,7 @@ The lab uses a version of the Petclinic application as the target. Azul has just
 
 - Mac or Linux host or VM (or Windows with WSL) with Internet access
 - Installed git, maven, recent Zulu v17+, recent non-Azul Java v17+ (optional)
-- Azul Intelligence Cloud access
+- Azul Intelligence Cloud access (contact your Azul Account Manager if you dont have access)
 
 ## Getting Started
 
