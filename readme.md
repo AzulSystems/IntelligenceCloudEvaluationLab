@@ -2,7 +2,7 @@
 
 ## Intro
 
-Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (IC). This repo will help you quickly get started with IC and saome of its key features.
+Welcome to the Azul Systems Evaluation Lab for the Azul Intelligence Cloud (IC). This repo will help you quickly get started with IC and some of its key features.
 
 The lab uses a version of the Petclinic application as the target. Azul has added a few additional packages and classes to the application for demonstration purposes. All of the source code is included in the repository.
 
