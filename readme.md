@@ -68,6 +68,8 @@ If you are interested in method-level Code Inventory, please ask your Azul Sales
 
 ## Lab 5 - JVM Inventory
 
+The JVM Inventory (JVMI) feature lets you search through all JVMs that have connected to IC. While this is *not a discovery tool*, it can be used to detect running JVMs across different vendors. One way to do this on Linux systems
+
 ## Lab 6 - API Examples
 
 The **curlExamples** folder contains some sample curl scripts for you to play with to exercise a few of the API calls.
