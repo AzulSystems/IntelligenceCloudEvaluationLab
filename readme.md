@@ -25,7 +25,7 @@ The lab uses the Petclinic application as the target. Azul has added additional 
 
 ## Getting Started
 
-1. Clone this repo (% git clone https://github.com/rstatsinger/AzulSystemsEvalLabforAIC)
+1. Clone this repo (% git clone https://github.com/AzulSystems/IntelligenceCloudEvaluationLab.git)
 2. In your cloned repo, edit the file called **.env**. Log into IC and confirm you have access, then go to Settings -> Forwarders and click on the **default** forwarder, then click **Show Settings** in the middle of the page. Copy the values of **ic.host** and **forwarder.access.key** and paste them into the .env file. Now go to Explorer -> API and generate an API Key. Copy the key and paste it in the file for the value of the **APIKEY** environment variable. From the same screen, copy the API URL and paste it into the **.env** file for the **IC_API_URL** variable. Also set the **APPENV** variable to something like **AzulPetclinicLabV1-YourInitials** and the **APPNAME** to something like **AzulPetclinic-YourInitials**.
 3. cd into the **Forwarder** subdirectory and type **./runForwarder.sh**. Verify that your forwarder starts up - you should shortly see a message that looks like this:
 
