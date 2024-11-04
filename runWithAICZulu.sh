@@ -15,7 +15,7 @@ export _JAVA_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:AzCRSMode=on"
 #
 # details at https://docs.azul.com/intelligence-cloud/detailed-information/diagnostic-configuration#diagnostics-crs-arguments
 
-export AZ_CRS_ARGUMENTS="UnlockExperimentalCRS,log=info,delayTermination=120000,delayInitiation=0,api.url=https://localhost"
+export AZ_CRS_ARGUMENTS="enable,log=info,delayTermination=120000,delayInitiation=0,api.url=https://localhost"
 
 java -jar target/spring-petclinic-3.0.0-SNAPSHOT.jar
 
