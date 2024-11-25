@@ -1,11 +1,15 @@
 
-APIKEY=<SET THIS FROM SETTINGS -> PROFILE>
+# Version for v2 API
+
+APIKEY=<SET THIS FROM SETTINGS -> Profile -> Show Configuration>
+
 ## SET ENDPOINT FROM Vulnerability Detection -> API - Show Configuration
-## Make sure to append /report/cve to the end
-## example: ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/report/cve
+## Make sure to append /report/v2/cve to the end
+## example: ENDPOINT=https://azul.public-api.crs-prod.azul.com/public/report/v2/cve
+
 ENDPOINT=<SET THIS>
-APPENV=<SET THIS>
-REPORTNAME=<SET THIS>
+APPENV=<SET THIS BASED ON APPENV TAG USED WHEN YOU ONBOARDED TO IC>
+REPORTNAME=<GIVE A DESCRIPTIVE NAME>
 
 curl -s -X 'POST' \
   ''$ENDPOINT'' \
@@ -14,7 +18,7 @@ curl -s -X 'POST' \
   -H 'x-api-key: '$APIKEY'' \
   -d '{
   "filter": [
-    "tags.AppEnv = '\'$APPENV\''"
+    "AppEnv = '\'$APPENV\''"
   ],
   "sortBy": [
     "score=DESC",
