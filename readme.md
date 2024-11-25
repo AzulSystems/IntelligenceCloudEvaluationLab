@@ -12,7 +12,6 @@ The lab uses a version of the Petclinic application as the target. Azul has adde
 - Generate an AVD report to see the Used vs Present CVEs and understand how this can help prioritize vulnerability triage and remediation
 - If desired, generate a spreadsheet from the AVD report (your Azul Sales Engineer will assist)
 - Generate a graphical Code Inventory report showing you which Petclinic code has never run
-- Generate a JVM Inventory report
 - Experiment with a few sample API calls via cURL
 - Make sure you can accomplish these labs using:
     1. This README (please follow it end to end and don't skip any steps :))
@@ -66,11 +65,8 @@ Make sure you have completed Lab 1 before attempting this lab.
 
 If you are interested in method-level Code Inventory, please ask your Azul Sales Engineer to assist you. You will need to be running a recent Azul JDK (either Zulu or Zing).
 
-## Lab 5 - JVM Inventory
 
-The JVM Inventory (JVMI) feature lets you search through all JVMs that have connected to IC. While this is *not a discovery tool*, it can be used to detect running JVMs across different vendors. One way to do this on Linux systems
-
-## Lab 6 - API Examples
+## Lab 5 - API Examples
 
 The **curlExamples** folder contains some sample curl scripts for you to play with to exercise a few of the API calls.
 
