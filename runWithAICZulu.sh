@@ -7,7 +7,7 @@ unset JDK_JAVA_OPTIONS
 
 . ./.env
 
-export CRS_TAGS="AppName=$APPNAME; AppEnv=$APPENV; username=$USERNAME"
+export CRS_TAGS="AppName=$APPNAME;AppEnv=$APPENV;username=$USERNAME"
 export _JAVA_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:AzCRSMode=on"
 
 # api.url is the Forwarder
