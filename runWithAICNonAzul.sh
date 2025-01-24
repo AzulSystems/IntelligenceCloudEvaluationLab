@@ -13,7 +13,7 @@ wget `curl -s https://cdn.azul.com/ic-agent/ic-agent.json | grep url | cut -d"\"
 unzip *.zip
 cd ..
 
-export CRS_TAGS="AppName=$APPNAME-Agent; AppEnv=$APPENV-Agent; usingagent=yes; username=$USERNAME"
+export CRS_TAGS="AppName=$APPNAME-Agent;AppEnv=$APPENV-Agent;usingagent=yes; username=$USERNAME"
 
 export JDK_JAVA_OPTIONS="-javaagent:${AGENTDIR}/ic-agent.jar=accessor=${AGENTDIR}/ic-agent-accessor.jar \
    -DaagentDir=${AGENTDIR} \
