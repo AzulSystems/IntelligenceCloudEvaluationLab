@@ -63,11 +63,10 @@ Make sure you have completed Lab 1 before attempting this lab.
 6. Side **Create Template** to the right, then click **Create**
 7. Let the report create and then examine the details by clicking on the blue **Report ID** link.
 
-## Lab 4 - API Examples
+## Lab 4 (Optional) - API Examples
 
 The **curlExamples** folder contains some sample curl scripts for you to play with to exercise a few of the API calls.
 
 ## Questions?
 
-Reach out to your local Azul contact - we want to help!
-
+Reach out to your local Azul contact - we're here to help.
