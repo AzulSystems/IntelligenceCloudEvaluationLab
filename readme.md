@@ -21,7 +21,7 @@ The lab uses a version of the Petclinic application as the target. Azul has adde
 ## Prerequisites
 
 - Mac or Linux host or VM (or Windows with WSL) with Internet access
-- Installed git, maven, recent Zulu v17+, recent non-Azul Java v17+ (optional)
+- Installed git, maven, and a recent JDK version 8 or later. This can be an Azul JDK but does not have to be.
 - Azul Intelligence Cloud access (contact your Azul Account Manager if you dont have access)
 
 ## Getting Started
