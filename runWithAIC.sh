@@ -19,10 +19,7 @@ export JDK_JAVA_OPTIONS="-javaagent:${AGENTDIR}/ic-agent.jar=accessor=${AGENTDIR
    -DaagentDir=${AGENTDIR} \
    -Djava.security.policy=${AGENTDIR}/agent.all.policy"
 
-# set up for class level code inventory, which is the default. 
-# Details at https://docs.azul.com/intelligence-cloud/detailed-information/diagnostic-configuration#diagnostics-crs-arguments
-
-export AZ_CRS_ARGUMENTS="log=info,UnlockExperimentalCRS,enable,api.url=https://localhost,delayInitiation=0,delayTermination=120000"
+export AZ_CRS_ARGUMENTS="log=info,notifyFirstCall=true,sendClassMethods=true,api.url=https://localhost,delayInitiation=300,delayTermination=120000"
 
 java -jar target/spring-petclinic-3.0.0-SNAPSHOT.jar
 
