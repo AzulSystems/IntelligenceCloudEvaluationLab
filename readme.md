@@ -48,7 +48,7 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 Make sure you have completed Lab 1 before attempting this lab.
 
 1. If you recently did Lab 1, you should have a running instance, and you're ready to analyze your Code Inventory to see which code has never run.
-2. You have already set the **AppEnv** tag in your **.env** file. AppEnv is a special tag that links running instances in IC with client side processing of application jarfiles - it's the "glue" between the code that IC has seen run, and all of the code that could run. It will be used by the Intelligence Cloud Client to generate an HTML report on the code that has not run. 
+2. You have already set the **AppEnv** tag in your **.env** file. **AppEnv** is a special tag that IC uses to query JVMs. You will need the AppEnv tag you set in Lab 1 for this lab.
 3. Navigate to the **Code Inventory** area in the IC UI left nav area. Click the blue Create Report button on the right side. Give the report a name, and at the right edge make sure the **Use** dropdown is set to **ALL**.
 4. In the **Filter** area, select **AppEnv** and the **CONTAINS** comparator. Type or paste in your **AppEnv** tag. Click the blue **CREATE** button.
 5. The report may take a few minutes to create. When the report is created, click on the blue link for the **Report ID**.
