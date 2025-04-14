@@ -9,7 +9,7 @@ The lab uses a version of the Petclinic application as the target. Azul has adde
 ## Goals
 
 - Onboard our version of Petclinic into IC and verify that its running
-- Generate an AVD report to see the Used vs Present CVEs and understand how this can help prioritize vulnerability triage and remediation
+- Generate a Vulnerability Detection report to see the Used vs Present CVEs and understand how this can help prioritize vulnerability triage and remediation
 - If desired, generate a spreadsheet from the AVD report (your Azul Sales Engineer will assist)
 - Generate a graphical Code Inventory report showing you which Petclinic code has never run
 - Generate a JVM Inventory report showing recent JVM connections to IC
