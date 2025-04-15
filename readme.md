@@ -21,7 +21,7 @@ The lab uses a version of the Petclinic application as the target. Azul has adde
 ## Prerequisites
 
 - Mac or Linux host or VM (or Windows with WSL) with Internet access
-- Installed git, maven, and a recent JDK version 8 or later. This can be an Azul JDK but does not have to be.
+- Installed git, maven, and JDK version 8 or later. This can be an Azul JDK but does not have to be.
 - Azul Intelligence Cloud access (contact your Azul Account Manager if you dont have access)
 
 ## Getting Started
@@ -36,7 +36,7 @@ Note: for ease of setup, this lab runs the Forwarder on the same machine as the 
 
 ## Lab 1 - Onboard Petclinic into IC and Create an AVD Report
 
-0. Make sure java --version returns a valid JDK version 8 or newer
+0. Make sure **java --version** returns a valid JDK version 8 or newer
 1. Build Petclinic - **% ./build.sh** 
 2. Run Petclinic and onboard it into AVD: run the **runWithIC.sh** script - verify that Petclinic comes up at localhost:8080 and that your Petclinic instance is there in the UI - it might take a minute or two to show up.
 3. It may take another few minutes for initial CVE information to show up. Once you see it, make sure you are in the **Vulnerability Detection** area in the left nav of the IC UI. Create an **AVD report** against Petclinic - Give the report a descriptive name.
