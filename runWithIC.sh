@@ -15,8 +15,7 @@ cd ..
 
 export CRS_TAGS="AppName=$APPNAME-Agent;AppEnv=$APPENV-Agent;usingagent=yes; username=$USERNAME"
 
-export JDK_JAVA_OPTIONS="-javaagent:${AGENTDIR}/ic-agent.jar=accessor=${AGENTDIR}/ic-agent-accessor.jar \
-   -DaagentDir=${AGENTDIR} \
+export JDK_JAVA_OPTIONS="-javaagent:${AGENTDIR}/ic-agent.jar -DaagentDir=${AGENTDIR} \
    -Djava.security.policy=${AGENTDIR}/agent.all.policy"
 
 export AZ_CRS_ARGUMENTS="log=info,notifyFirstCall=true,sendClassMethods=true,api.url=https://localhost,delayInitiation=300,delayTermination=120000"
